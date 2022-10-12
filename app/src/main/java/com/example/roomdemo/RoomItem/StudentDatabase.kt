@@ -1,8 +1,7 @@
-package com.example.roomdemo
+package com.example.roomdemo.RoomItem
 
 import android.content.Context
 import androidx.room.Database
-import androidx.room.Entity
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
@@ -15,7 +14,7 @@ abstract class StudentDatabase:RoomDatabase() {
         @Volatile
         private var INSTANCE : StudentDatabase? = null;
 
-        fun getInstance(context: Context):StudentDatabase{
+        fun getInstance(context: Context): StudentDatabase {
             synchronized(this){
                 var instance = INSTANCE;
                 if (instance == null) {

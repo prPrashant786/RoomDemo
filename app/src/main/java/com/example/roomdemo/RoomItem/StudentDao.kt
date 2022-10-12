@@ -1,4 +1,4 @@
-package com.example.roomdemo
+package com.example.roomdemo.RoomItem
 
 import androidx.room.*
 import kotlinx.coroutines.flow.Flow

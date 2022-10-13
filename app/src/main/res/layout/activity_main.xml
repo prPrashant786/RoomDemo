@@ -33,6 +33,7 @@
                 android:layout_marginStart="10dp"
                 android:hint="ENTER YOUR NAME"
                 android:maxLines="1"
+                android:singleLine="true"
                 android:padding="5dp" />
         </LinearLayout>
 
@@ -56,6 +57,8 @@
                 android:layout_marginStart="10dp"
                 android:hint="ENTER YOUR MAIL ID"
                 android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
                 android:padding="5dp" />
         </LinearLayout>
     </LinearLayout>

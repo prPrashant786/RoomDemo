@@ -27,6 +27,6 @@ interface StudentDao {
  // FLow Update automaticaly Additional Featere of Courotine
 
     @Query("SELECT * FROM `Student-table` WHERE id=:id")
-    fun fetchStudentById(id:Int):Flow<List<StudentEntity>>
+    fun fetchStudentById(id:Int):Flow<StudentEntity>
 
 }

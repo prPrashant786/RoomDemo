@@ -23,16 +23,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="NAME:-"
-                android:textSize="22sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 />
             <EditText
                 android:id="@+id/udname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
+                android:padding="2dp"
+                android:maxLines="1"
+                android:singleLine="true"
                 android:hint="ENTER YOUR NAME"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="10dp"
@@ -43,16 +45,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="EMAIL:-"
-                android:textSize="22sp"
+                android:textSize="15sp"
+                android:maxLines="1"
                 android:textStyle="bold"
                 />
             <EditText
                 android:id="@+id/udemail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
+                android:padding="2dp"
+                android:singleLine="true"
                 android:hint="ENTER YOUR MAIL ID"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -65,7 +69,7 @@
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="22sp"
+                android:textSize="15sp"
                 android:text="UPDATE"
                 android:textColor="#F50000"
                 android:textStyle="bold"
@@ -76,7 +80,7 @@
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="22sp"
+                android:textSize="15sp"
                 android:text="CANCEL"
                 android:textColor="#000000"
                 android:textStyle="bold"

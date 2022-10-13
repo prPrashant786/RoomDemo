@@ -10,8 +10,8 @@ import com.example.roomdemo.databinding.ItemViewLayBinding
 
 class itemAdapter(private val items : ArrayList<StudentEntity>,
 // new thing
-//                private val updateListner : (id:Int)->Unit,
-//                private val deleteListner : (id:Int)->Unit
+                private val updateListner : (id:Int)->Unit,
+                private val deleteListner : (id:Int)->Unit
 ):RecyclerView.Adapter<itemAdapter.ViewHolder>() {
 
     class ViewHolder(binding : ItemViewLayBinding) : RecyclerView.ViewHolder(binding.root){
@@ -39,12 +39,12 @@ class itemAdapter(private val items : ArrayList<StudentEntity>,
         //Todo position color change if required context use there vidNo. :- 173
 
         holder.Editbtn.setOnClickListener {
-            Toast.makeText(context,"WORKING ON IT",Toast.LENGTH_SHORT).show()
-//            updateListner.invoke(item.id)
+//            Toast.makeText(context,"WORKING ON IT",Toast.LENGTH_SHORT).show()
+            updateListner.invoke(item.id)
         }
         holder.Delbtn.setOnClickListener {
-            Toast.makeText(context,"WORKING ON IT",Toast.LENGTH_SHORT).show()
-//            deleteListner.invoke(item.id)
+//            Toast.makeText(context,"WORKING ON IT",Toast.LENGTH_SHORT).show()
+            deleteListner.invoke(item.id)
         }
 
     }
